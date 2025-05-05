@@ -1,11 +1,3 @@
-
-````markdown
-# Angular Course Dashboard
-
-A basic Angular 19 project that allows users to log in, view a list of courses, and edit course details using a responsive Bootstrap UI.
-
----
-
 ## 🛠 Setup Instructions
 
 1. **Install Angular CLI globally**:
