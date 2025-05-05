@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+<div class="d-flex">
+    <div class="bg-light p-3" style="width: 200px;">
+      <h5>Courses</h5>
+      <ul class="list-group">
+        <li
+          class="list-group-item"
+          *ngFor="let course of courses"
+          (click)="selectCourse(course)"
+          style="cursor: pointer;"
+          [class.active]="course === activeCourse"
+        >
+          {{ course }}
+        </li>
+      </ul>
+    </div>
+    <div class="flex-fill p-3" *ngIf="activeCourse">
+      <app-course-table [courseTitle]="activeCourse"></app-course-table>
+    </div>
+  </div>
+  

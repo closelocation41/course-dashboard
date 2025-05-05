@@ -1,0 +1,25 @@
+
+<div class="container">
+  <table class="table table-striped" *ngIf="courseList.length > 0">
+    <thead>
+      <tr>
+        <th>Topic</th>
+        <th>Instructor</th>
+        <th>Duration</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let course of courseList; let i = index">
+        <td><input [(ngModel)]="course.topic" class="form-control" /></td>
+        <td><input [(ngModel)]="course.instructor" class="form-control" /></td>
+        <td><input [(ngModel)]="course.duration" class="form-control" /></td>
+        <td>
+          <button class="btn btn-success btn-sm" (click)="saveCourse(i)">Save</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+  
