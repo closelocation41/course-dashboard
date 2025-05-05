@@ -24,6 +24,9 @@
    http://localhost:4200
    ```
 
+![Login Page](public/login.png)
+
+
 ---
 
 ## 🔐 Login Credentials
@@ -36,9 +39,12 @@
 ## 📚 How to Use
 
 * After logging in, the app displays a top navigation bar and a left sidebar menu.
+![Left Menu](public/left-menu.png)
 * Click on any **course** in the sidebar to load its content.
+![Course Content](public/course-content.png)
 * A table will appear with rows of topics, instructors, and durations for that course.
 * You can **edit any row** directly in the table.
+![Save Content](public/course-save.png)
 * Click **Save** to store your changes (currently logs to console).
 
 ---
