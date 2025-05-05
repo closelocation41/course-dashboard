@@ -1,59 +1,87 @@
-# CourseDashboard
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.10.
+````markdown
+# Angular Course Dashboard
 
-## Development server
+A basic Angular 19 project that allows users to log in, view a list of courses, and edit course details using a responsive Bootstrap UI.
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
+## 🛠 Setup Instructions
+
+1. **Install Angular CLI globally** (if not already installed):
+   ```bash
+   npm install -g @angular/cli
+````
+
+2. **Install project dependencies**:
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**:
+
+   ```bash
+   ng serve
+   ```
+
+4. **Open your browser** and go to:
+
+   ```
+   http://localhost:4200
+   ```
+
+---
+
+## 🔐 Login Credentials
+
+* **Email:** `test@demo.com`
+* **Password:** `demo`
+
+---
+
+## 📚 How to Use
+
+* After logging in, the app displays a top navigation bar and a left sidebar menu.
+* Click on any **course** in the sidebar to load its content.
+* A table will appear with rows of topics, instructors, and durations for that course.
+* You can **edit any row** directly in the table.
+* Click **Save** to store your changes (currently logs to console).
+
+---
+
+## 🎨 UI & Tech Stack
+
+* Angular 19 (with Standalone Components)
+* Bootstrap 5 (CDN)
+* TypeScript
+
+---
+
+## 📂 Project Structure (simplified)
+
+```
+src/
+├── app/
+│   ├── components/
+│   │   ├── login/
+│   │   ├── side-menu/
+│   │   ├── course-table/
+│   │   └── navbar/
+│   ├── app.routes.ts
+│   └── app.component.ts
+├── index.html
+├── styles.scss
+└── main.ts
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## ✅ Features
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+* Login with email/password.
+* Sidebar course navigation.
+* Course-specific content in a table.
+* Inline table editing and save.
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
