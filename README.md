@@ -8,10 +8,11 @@ A basic Angular 19 project that allows users to log in, view a list of courses, 
 
 ## 🛠 Setup Instructions
 
-1. **Install Angular CLI globally** (if not already installed):
+1. **Install Angular CLI globally**:
+
    ```bash
    npm install -g @angular/cli
-````
+   ```
 
 2. **Install project dependencies**:
 
